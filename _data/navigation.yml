@@ -1,0 +1,8 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Resume"
+    url: /assets/other/Duncan%20Wentzel%20Resume.pdf
+    target: _blank

@@ -1,0 +1,322 @@
+/* Custom styles for index.html - using Nord theme colors */
+/* Note: Nord theme variables are automatically loaded via minimal_mistakes_skin setting */
+
+.container-v {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.left {
+  flex: 0 0 70%;
+}
+
+.right {
+  // empty
+}
+
+.main {
+  border-left: 3px solid $base0b; // Nord green (#a3be8c)
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.complete {
+  border-left: 3px solid $border-color; // Nord border color
+}
+
+.container-h {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  line-height: 1.15em;
+}
+
+.job {
+  font-weight: bold;
+}
+
+.wplace {
+  font-size: 15px;
+}
+
+.extra {
+  font-size: 12px;
+}
+
+.present {
+  color: $base0b;
+}
+
+.sum {
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
+
+details {
+  padding: 0 0 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+.fa-arrow-up-right-from-square {
+  font-size: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+.wplace a {
+  color: $primary-color; // Nord blue (#81a1c1)
+  text-decoration: none;
+}
+
+.wplace a:visited {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.wplace a:hover {
+  color: $link-color-visited; // Nord darker blue (#5e81ac)
+  opacity: 0.7;
+}
+
+// Disable opacity change on hover for author profile avatar
+.sidebar {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+// Magnific Popup - smaller lightbox image with more margin
+.mfp-container {
+  padding: 40px !important;
+}
+
+.mfp-figure {
+  max-width: 80vw !important;
+  max-height: 80vh !important;
+
+  img {
+    max-width: 100% !important;
+    max-height: 80vh !important;
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+// Close button styling - positioned in top right of viewport
+.mfp-close {
+  position: fixed !important;
+  top: 15px !important;
+  right: 15px !important;
+  font-size: 40px !important;
+  width: 50px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+// Replace default arrows with chevrons
+.mfp-arrow::before {
+  display: none !important;
+}
+
+.mfp-arrow::after {
+  border: none !important;
+  width: 16px !important;
+  height: 16px !important;
+  background: none !important;
+  border-top: 3px solid rgba(255, 255, 255, 0.7) !important;
+  border-right: 3px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+.mfp-arrow-left::after {
+  transform: rotate(-135deg) !important;
+}
+
+.mfp-arrow-right::after {
+  transform: rotate(45deg) !important;
+}
+
+// Magnific Popup zoom animation - only on the image, not the figure
+.mfp-zoom-in {
+
+  // Animate only the image inside the figure
+  .mfp-figure img {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.2s ease-out;
+  }
+
+  &.mfp-ready .mfp-figure img {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.mfp-removing .mfp-figure img {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  // Fade in the figure container (without transform)
+  .mfp-figure {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+
+  &.mfp-ready .mfp-figure {
+    opacity: 1;
+  }
+
+  &.mfp-removing .mfp-figure {
+    opacity: 0;
+  }
+
+  // Background fade
+  &.mfp-bg {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+
+  &.mfp-ready.mfp-bg {
+    opacity: 0.8;
+  }
+
+  &.mfp-removing.mfp-bg {
+    opacity: 0;
+  }
+}
+
+// CSS-only Slider
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 1.5em auto;
+  overflow: hidden;
+  background: #3b4252;
+  border-radius: 4px;
+
+  input[type="radio"] {
+    display: none;
+  }
+}
+
+.slider__track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.slider__slide {
+  min-width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.slider__nav {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.slider__btns {
+  position: absolute;
+  inset: 0;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+
+  label {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    &::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border: solid rgba(255, 255, 255, 0.7);
+      border-width: 3px 3px 0 0;
+      transition: border-color 0.2s;
+    }
+
+    &:hover::before {
+      border-color: #fff;
+    }
+
+    &:first-child::before {
+      transform: rotate(-135deg);
+      margin-left: 4px;
+    }
+
+    &:last-child::before {
+      transform: rotate(45deg);
+      margin-right: 4px;
+    }
+  }
+}
+
+.slider__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 12px;
+  border-radius: 4px;
+
+  label {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.7);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{% assign sid = include.id %}
+{% assign imgs = include.images %}
+{% assign total = imgs | size %}
+<div class="slider" id="{{ sid }}">
+{% for img in imgs %}<input type="radio" name="{{ sid }}" id="{{ sid }}{{ forloop.index }}" {% if forloop.first %}checked{% endif %}>{% endfor %}
+<div class="slider__track">{% for img in imgs %}<div class="slider__slide"><a href="{{ img.url | default: img.image_path | relative_url }}"><img src="{{ img.image_path | relative_url }}" alt="{{ img.alt }}"></a></div>{% endfor %}</div>
+<div class="slider__nav">{% for img in imgs %}{% assign prv = forloop.index | minus: 1 %}{% assign nxt = forloop.index | plus: 1 %}{% if prv == 0 %}{% assign prv = total %}{% endif %}{% if nxt > total %}{% assign nxt = 1 %}{% endif %}<div class="slider__btns"><label for="{{ sid }}{{ prv }}"></label><label for="{{ sid }}{{ nxt }}"></label></div>{% endfor %}</div>
+<div class="slider__dots">{% for img in imgs %}<label for="{{ sid }}{{ forloop.index }}"></label>{% endfor %}</div>
+</div>
+<style>{% for img in imgs %}#{{ sid }}{{ forloop.index }}:checked~.slider__track{transform:translateX(-{{ forloop.index0 }}00%)}#{{ sid }}{{ forloop.index }}:checked~.slider__nav .slider__btns:nth-child({{ forloop.index }}){display:flex}#{{ sid }}{{ forloop.index }}:checked~.slider__dots label:nth-child({{ forloop.index }}){background:rgba(255,255,255,.9)}{% endfor %}</style>
