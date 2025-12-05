@@ -26,11 +26,11 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/duncan-wentzel-5605081b6/"
 
-baseurl: "/duncan-site-v2" # the subpath of your site, e.g. /blog
+baseurl: "/duncan-personal-site" # the subpath of your site, e.g. /blog
 url: "https://jdy4k.github.io" # the base hostname & protocol for your site
 
 # GitHub Pages repository
-repository: jdy4k/duncan-site-v2
+repository: jdy4k/duncan-personal-site
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
