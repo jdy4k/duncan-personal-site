@@ -51,6 +51,64 @@ border-bottom: 0px solid black;
   max-width: 1200px;
 }
 
+// Feature row with button to right of title
+.feature__wrapper--left-button {
+  .archive__item-teaser {
+    overflow: hidden;
+    border-radius: 4px;
+
+    transition: transform 0.3s ease;
+    display: block;
+    width: 100%;
+
+    a {
+      display: block;
+    }
+
+    &:hover {
+      ;
+    }
+  }
+
+  .title-button-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    margin-bottom: 0.25em;
+    padding-top: 0.5em;
+  }
+
+  .archive__item-title {
+    margin: 0;
+    order: 1;
+    line-height: 1;
+    padding-top: 0.2em;
+  }
+
+  .btn {
+    order: 2;
+    margin: 0;
+    padding: 0.4em 0.6em;
+    margin-bottom: 0.2em;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: $link-color !important;
+    font-size: 1em;
+    min-width: auto;
+    line-height: 1;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background: transparent !important;
+      color: $link-color-hover !important;
+      transform: scale(1.33);
+    }
+  }
+}
+
 // Center page on individual portfolio pages
 .layout--single #main {
   display: flex;
@@ -148,17 +206,44 @@ summary {
   border-radius: 10px;
   border: 1px solid $border-color;
   gap: 2em;
+  position: relative;
   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.architizer.com%2Fwp-content%2Fuploads%2FPIXNIO-225014-4739x3158.jpg&f=1&nofb=1&ipt=732d5bd335b5f1755b4468c93df0d7f1be11fef1512b76881c971104ac447f3f');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  .label {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    pointer-events: none;
+  }
+
+  .label,
+  p {
     font-weight: 600;
     margin-right: 0.5em;
     color: #ffffff;
     margin-bottom: 0.3em;
+    position: relative;
+    z-index: 1;
+  }
 
+  .btn {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      color: #dddddd !important;
+      border-color: #dddddd !important;
+    }
   }
 }
 
@@ -203,13 +288,12 @@ summary {
   height: 300px;
   overflow: hidden;
   border-radius: 8px;
-  text-decoration: none !important;
+  text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-decoration: none !important;
 
     .portfolio-list__image img {
       transform: scale(1.05);
@@ -217,11 +301,6 @@ summary {
 
     .portfolio-list__overlay {
       opacity: 0.5;
-    }
-
-    .portfolio-list__title {
-      text-decoration: none !important;
-      border-bottom: none !important;
     }
   }
 }
@@ -270,9 +349,8 @@ summary {
   margin: 0 0 0.3em 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   line-height: 1.2;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  padding-bottom: 0 !important;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .portfolio-list__excerpt {
@@ -304,10 +382,7 @@ summary {
   }
 }
 
-.pagination {
-  border-top: 0px solid black !important;
-  padding-top: 0 !important;
-}
+
 
 /******************/
 /*   LIGHTBOX     */
