@@ -1,10 +1,14 @@
 /* Custom styles for index.html - using Nord theme colors */
 /* Note: Nord theme variables are automatically loaded via minimal_mistakes_skin setting */
 
-// Libre Franklin font for everything
+// Libre Franklin font for everything with Font Awesome fallback
+* {
+  font-family: 'Libre Franklin', 'Font Awesome 7 Free', 'Font Awesome 7 Brands', sans-serif !important;
+}
+
 html,
 body {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Libre Franklin', 'Font Awesome 7 Free', sans-serif !important;
 }
 
 // Heavier weight for titles
@@ -16,8 +20,24 @@ h5,
 h6,
 .page__title,
 .archive__item-title {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Libre Franklin', 'Font Awesome 7 Free', 'Font Awesome 7 Brands', sans-serif !important;
   font-weight: 600;
+}
+
+// Paragraphs and text elements
+p,
+span,
+div,
+a,
+li,
+td,
+th,
+label,
+input,
+textarea,
+select,
+button {
+  font-family: 'Libre Franklin', 'Font Awesome 7 Free', 'Font Awesome 7 Brands', sans-serif !important;
 }
 
 .masthead,
@@ -30,13 +50,13 @@ border-bottom: 0px solid black;
 .greedy-nav a,
 .greedy-nav .visible-links a,
 .masthead__menu-item a {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Libre Franklin', 'Font Awesome 7 Free', 'Font Awesome 7 Brands', sans-serif !important;
   font-weight: 600;
 }
 
 // Site title
 .site-title {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Libre Franklin', 'Font Awesome 7 Free', 'Font Awesome 7 Brands', sans-serif !important;
   font-weight: 700;
 }
 
@@ -66,7 +86,7 @@ border-bottom: 0px solid black;
     }
 
     &:hover {
-      ;
+      transform: scale(1.02);
     }
   }
 
