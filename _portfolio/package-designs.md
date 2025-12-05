@@ -3,13 +3,6 @@ title: "Package Designs"
 excerpt: "Creative packaging design for beverages and snacks, featuring bold typography and eye-catching illustrations."
 header:
   teaser: /assets/images/Package Designs/Beer/astro/cosmonaut final.webp
-sidebar:
-  - title: "Role"
-    text: "Package Designer, Illustrator"
-  - title: "Project Type"
-    text: "Package Design, Brand Identity"
-  - title: "Deliverables"
-    text: "Can Designs, Chip Bag Designs, Label Art"
 astro_gallery:
   - url: /assets/images/Package Designs/Beer/astro/cosmonaut final.webp
     image_path: /assets/images/Package Designs/Beer/astro/cosmonaut final.webp

@@ -1,6 +1,63 @@
 /* Custom styles for index.html - using Nord theme colors */
 /* Note: Nord theme variables are automatically loaded via minimal_mistakes_skin setting */
 
+// Libre Franklin font for everything
+html,
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+// Heavier weight for titles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page__title,
+.archive__item-title {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+}
+
+// Heavier weight for menu buttons
+.greedy-nav a,
+.greedy-nav .visible-links a,
+.masthead__menu-item a {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+}
+
+// Site title
+.site-title {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+}
+
+// Center archive div on portfolio listing page
+.layout--collection #main {
+  display: flex;
+  justify-content: center;
+}
+
+.layout--collection .archive {
+  width: 100%;
+  max-width: 1200px;
+}
+
+// Center page on individual portfolio pages
+.layout--single #main {
+  display: flex;
+  justify-content: center;
+}
+
+.layout--single .page {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 .container-v {
   display: flex;
   flex-direction: column;
