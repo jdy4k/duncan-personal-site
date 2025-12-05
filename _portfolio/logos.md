@@ -2,7 +2,8 @@
 title: "Logo Designs"
 excerpt: "A collection of logo and brand identity designs showcasing versatile visual mark creation."
 header:
-  teaser: /assets/images/Logos/Jack stuff-16.webp
+  teaser: /assets/images/test2.png
+  image: /assets/images/test2.png
 logo_gallery:
   - url: /assets/images/Logos/Jack stuff-16.webp
     image_path: /assets/images/Logos/Jack stuff-16.webp

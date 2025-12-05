@@ -2,7 +2,8 @@
 title: "Print Designs"
 excerpt: "Editorial and print design work including magazine layouts, book covers, and publication spreads."
 header:
-  teaser: /assets/images/Print Designs/au courant/au corrant cover.webp
+  teaser: /assets/images/test2.png
+  image: /assets/images/test2.png
 sidebar:
   - title: "Role"
     text: "Editorial Designer, Layout Artist"

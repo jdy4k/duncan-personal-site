@@ -2,7 +2,8 @@
 title: "Advertisements"
 excerpt: "Creative advertising campaigns and promotional designs featuring bold concepts and impactful visuals."
 header:
-  teaser: /assets/images/Ads/gatoradde mock.webp
+  teaser: /assets/images/test2.png
+  image: /assets/images/test2.png
 gatorade_gallery:
   - url: /assets/images/Ads/gatoradde mock.webp
     image_path: /assets/images/Ads/gatoradde mock.webp

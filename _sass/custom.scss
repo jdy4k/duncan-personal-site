@@ -20,6 +20,11 @@ h6,
   font-weight: 600;
 }
 
+.masthead,
+.feature__wrapper {
+  border-bottom: 0px solid black;
+}
+
 // Heavier weight for menu buttons
 .greedy-nav a,
 .greedy-nav .visible-links a,
@@ -133,6 +138,31 @@ summary {
   top: -2px;
 }
 
+.seemore {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 1em 2em;
+  border-radius: 20px;
+  border: 1px solid $border-color;
+  gap: 2em;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.architizer.com%2Fwp-content%2Fuploads%2FPIXNIO-225014-4739x3158.jpg&f=1&nofb=1&ipt=732d5bd335b5f1755b4468c93df0d7f1be11fef1512b76881c971104ac447f3f');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .label {
+    font-weight: 600;
+    margin-right: 0.5em;
+    color: #ffffff;
+    margin-bottom: 0.3em;
+
+  }
+}
+
+// BUTTONS
+
 .wplace a {
   color: $primary-color; // Nord blue (#81a1c1)
   text-decoration: none;
@@ -153,6 +183,13 @@ summary {
   opacity: 1 !important;
   transition: none !important;
 }
+
+
+
+/******************/
+/*   LIGHTBOX     */
+/******************/
+
 
 // Magnific Popup - smaller lightbox image with more margin
 .mfp-container {

@@ -2,7 +2,8 @@
 title: "Package Designs"
 excerpt: "Creative packaging design for beverages and snacks, featuring bold typography and eye-catching illustrations."
 header:
-  teaser: /assets/images/Package Designs/Beer/astro/cosmonaut final.webp
+  teaser: /assets/images/test2.png
+  image: /assets/images/test2.png
 astro_gallery:
   - url: /assets/images/Package Designs/Beer/astro/cosmonaut final.webp
     image_path: /assets/images/Package Designs/Beer/astro/cosmonaut final.webp

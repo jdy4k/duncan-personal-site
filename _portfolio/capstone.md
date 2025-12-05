@@ -2,7 +2,8 @@
 title: "Capstone Project"
 excerpt: "A comprehensive branding and design project featuring trail maps, logos, infographics, website design, and visual identity systems."
 header:
-  teaser: /assets/images/Capstone/capstone project header.webp
+  teaser: /assets/images/test2.png
+  image: /assets/images/test2.png
 website_gallery:
   - url: /assets/images/Capstone/website/hero.webp
     image_path: /assets/images/Capstone/website/hero.webp

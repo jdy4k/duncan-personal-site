@@ -2,7 +2,8 @@
 title: "Makerspace"
 excerpt: "Design system and visual identity for a makerspace, including custom symbol design and branding materials."
 header:
-  teaser: /assets/images/Makerspace/makerspace project header.webp
+  teaser: /assets/images/test2.png
+  image: /assets/images/test2.png
 symbols_gallery:
   - url: /assets/images/Makerspace/makerspace symbols-01.webp
     image_path: /assets/images/Makerspace/makerspace symbols-01.webp
