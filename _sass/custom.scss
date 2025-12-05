@@ -40,10 +40,17 @@ button {
   font-family: 'Libre Franklin', 'Font Awesome 7 Free', 'Font Awesome 7 Brands', sans-serif !important;
 }
 
-.masthead,
-.feature__wrapper,
-{
-border-bottom: 0px solid black;
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 0px solid black;
+  background-color: $background-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature__wrapper {
+  border-bottom: 0px solid black;
 }
 
 // Heavier weight for menu buttons
@@ -120,11 +127,22 @@ border-bottom: 0px solid black;
     transition: color 0.2s ease, transform 0.2s ease;
     display: flex;
     align-items: center;
+    outline: none !important;
 
     &:hover {
       background: transparent !important;
       color: $link-color-hover !important;
       transform: scale(1.33);
+      border: none !important;
+      outline: none !important;
+    }
+
+    &:focus,
+    &:active {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
     }
   }
 }
@@ -308,12 +326,15 @@ summary {
   height: 300px;
   overflow: hidden;
   border-radius: 8px;
-  text-decoration: none;
+  text-decoration: none !important;
+  border-bottom: none !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-decoration: none !important;
+    border-bottom: none !important;
 
     .portfolio-list__image img {
       transform: scale(1.05);
@@ -331,6 +352,7 @@ summary {
   left: 0;
   width: 100%;
   height: 100%;
+  border-bottom: none !important;
 
   img {
     width: 100%;
@@ -338,6 +360,7 @@ summary {
     object-fit: cover;
     object-position: center;
     transition: transform 0.3s ease;
+    border-bottom: none !important;
   }
 }
 
@@ -369,8 +392,8 @@ summary {
   margin: 0 0 0.3em 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   line-height: 1.2;
-  text-decoration: none;
-  border-bottom: none;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 .portfolio-list__excerpt {
@@ -380,6 +403,8 @@ summary {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   line-height: 1.4;
   max-width: 800px;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 // Responsive adjustments
@@ -390,7 +415,8 @@ summary {
 
   .portfolio-list__title {
     font-size: 1.8em;
-    border-bottom: none;
+    border-bottom: none !important;
+    text-decoration: none !important;
   }
 
   .portfolio-list__excerpt {
