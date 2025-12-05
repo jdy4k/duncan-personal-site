@@ -1,0 +1,21 @@
+{% assign entries = site[include.collection] %}
+
+<div class="portfolio-list">
+  {% for entry in entries %}
+    <a href="{{ entry.url | relative_url }}" class="portfolio-list__item">
+      <div class="portfolio-list__image">
+        {% if entry.header.teaser %}
+          <img src="{{ entry.header.teaser | relative_url }}" alt="{{ entry.title }}">
+        {% endif %}
+        <div class="portfolio-list__overlay"></div>
+      </div>
+      <div class="portfolio-list__content">
+        <h2 class="portfolio-list__title">{{ entry.title }}</h2>
+        {% if entry.excerpt %}
+          <p class="portfolio-list__excerpt">{{ entry.excerpt }}</p>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
+

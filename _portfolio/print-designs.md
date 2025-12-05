@@ -4,13 +4,6 @@ excerpt: "Editorial and print design work including magazine layouts, book cover
 header:
   teaser: /assets/images/test2.png
   image: /assets/images/test2.png
-sidebar:
-  - title: "Role"
-    text: "Editorial Designer, Layout Artist"
-  - title: "Project Type"
-    text: "Editorial Design, Publication Design"
-  - title: "Deliverables"
-    text: "Magazine Spreads, Book Covers, Brochures"
 au_courant_gallery:
   - url: /assets/images/Print Designs/au courant/au corrant cover.webp
     image_path: /assets/images/Print Designs/au courant/au corrant cover.webp
