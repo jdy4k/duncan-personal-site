@@ -58,9 +58,9 @@ feature_row2:
     btn_class: "btn--link"
 ---
 
-{% include feature_row_left_button %}
+{% include feature_row_custom.html %}
 
-{% include feature_row_left_button id="feature_row2" %}
+{% include feature_row_custom.html id="feature_row2" %}
 
 <div class="seemore">
   <p class="label">test</p>
