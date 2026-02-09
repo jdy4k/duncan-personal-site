@@ -1,0 +1,18 @@
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/racc-1.8.1/ext/racc/cparse
+/nix/store/0akh4i9af1sxvdn439mmx8iafac8cns5-ruby-3.3.10/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-idq8zv sitelibdir\=./.gem.20260208-65603-idq8zv clean
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-idq8zv sitelibdir\=./.gem.20260208-65603-idq8zv
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-idq8zv sitelibdir\=./.gem.20260208-65603-idq8zv install
+install -c -p -m 755 cparse.so ./.gem.20260208-65603-idq8zv/racc
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-idq8zv sitelibdir\=./.gem.20260208-65603-idq8zv clean

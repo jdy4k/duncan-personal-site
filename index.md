@@ -62,8 +62,3 @@ feature_row2:
 
 {% include feature_row_custom.html id="feature_row2" %}
 
-<div class="seemore">
-  <p class="label">test</p>
-  <a href="/link1/" class="btn btn--light-outline btn--large">Left Button</a>
-  <a href="/link2/" class="btn btn--light-outline btn--large">Right Button</a>
-</div>

@@ -24,7 +24,7 @@
         export PATH=$GEM_HOME/bin:$PATH
 
         # Install specific bundler version
-        gem install bundler -v 2.5.17
+        gem install bundler
 
         ruby -v
         bundler -v

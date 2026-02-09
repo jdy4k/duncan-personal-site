@@ -1,0 +1,19 @@
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+/nix/store/0akh4i9af1sxvdn439mmx8iafac8cns5-ruby-3.3.10/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-18hr3c sitelibdir\=./.gem.20260208-65603-18hr3c clean
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-18hr3c sitelibdir\=./.gem.20260208-65603-18hr3c
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-18hr3c sitelibdir\=./.gem.20260208-65603-18hr3c install
+install -c -p -m 755 ruby_http_parser.so ./.gem.20260208-65603-18hr3c
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-18hr3c sitelibdir\=./.gem.20260208-65603-18hr3c clean

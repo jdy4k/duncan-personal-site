@@ -1,0 +1,25 @@
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/json-2.18.1/ext/json/ext/parser
+/nix/store/0akh4i9af1sxvdn439mmx8iafac8cns5-ruby-3.3.10/bin/ruby extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... yes
+checking for rb_str_to_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... yes
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for x86intrin.h... yes
+checking for cpuid.h... yes
+creating Makefile
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/json-2.18.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-7sa7kf sitelibdir\=./.gem.20260208-65603-7sa7kf clean
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/json-2.18.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-7sa7kf sitelibdir\=./.gem.20260208-65603-7sa7kf
+compiling parser.c
+linking shared-object json/ext/parser.so
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/json-2.18.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-7sa7kf sitelibdir\=./.gem.20260208-65603-7sa7kf install
+install -c -p -m 755 parser.so ./.gem.20260208-65603-7sa7kf/json/ext
+
+current directory: /home/jdy4k/Documents/Repos/sites/duncan-personal-site/.gem/gems/json-2.18.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260208-65603-7sa7kf sitelibdir\=./.gem.20260208-65603-7sa7kf clean

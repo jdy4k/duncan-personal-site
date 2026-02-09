@@ -24,6 +24,14 @@ h6,
   font-weight: 600;
 }
 
+/* Removing hero splash (lazy) */
+.page__hero, .page__hero--overlay {
+  display: none;
+}
+
+.initial-content {
+  padding-top: 1em !important;
+}
 
 /* ============================================================================
    NAVIGATION & HEADER
@@ -37,8 +45,11 @@ h6,
   border-bottom: 0px solid black;
   background-color: $background-color;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.75em;
 }
-
+.masthead__inner-wrap {
+  padding: 8px;
+}
 // Navigation links - font-weight only (font-family inherited from *)
 .greedy-nav a,
 .greedy-nav .visible-links a,
@@ -49,6 +60,18 @@ h6,
 // Site title - font-weight only (font-family inherited from *)
 .site-title {
   font-weight: 700;
+  display: inline-block;
+  vertical-align: baseline;
+  transform: translateY(15%);
+}
+.site-subtitle {
+  display: inline-block;
+  vertical-align: baseline;
+  transform: translateY(-5%);
+  font-size: 0.75em;
+  padding-left: 0.75em;
+  font-style: italic;
+  margin-bottom: 1em;
 }
 
 
@@ -111,6 +134,7 @@ h6,
 
 .feature__wrapper {
   border-bottom: 0px solid black;
+  margin-bottom: 12px;
 }
 
 // Custom feature row with button and hover effects
