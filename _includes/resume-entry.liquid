@@ -1,0 +1,78 @@
+{% comment %}
+  resume-entry.liquid — Renders a single resume entry card.
+  Called via: {% include resume-entry.liquid entry=entry %}
+{% endcomment %}
+
+{% assign e = include.entry %}
+
+<div class="container-v main{% if e.is_complete %} complete{% endif %}">
+
+  <div class="container-h">
+
+    <div class="container-v left">
+      {% if e.title %}
+        <div class="title">{{ e.title }}</div>
+      {% endif %}
+
+      {% if e.subtitle %}
+        <div class="subtitle">
+          {{ e.subtitle }}
+          {% if e.subtitle_url %}
+            {% if e.subtitle_url contains "github.com" %}
+              <a href="{{ e.subtitle_url }}" target="_blank" rel="noopener">
+                <span class="fa-brands fa-git-alt"></span>
+              </a>
+            {% else %}
+              <a href="{{ e.subtitle_url }}" target="_blank" rel="noopener">
+                <span class="fa-solid fa-arrow-up-right-from-square"></span>
+              </a>
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if e.subtitle2 %}
+        <div class="subtitle">{{ e.subtitle2 }}</div>
+      {% endif %}
+    </div>
+
+    <div class="container-v right">
+      {% if e.extra1 %}
+        <div class="extra">{{ e.extra1 }}</div>
+      {% endif %}
+
+      {% if e.extra2 %}
+        {% assign extra2_display = e.extra2 | replace: "present", '<span class="present">present</span>' %}
+        <div class="extra">{{ extra2_display }}</div>
+      {% endif %}
+
+      {% if e.repo %}
+        {% assign repo_parts = e.repo | split: ".com/" %}
+        {% assign repo_label = repo_parts | last %}
+        <a href="{{ e.repo }}" target="_blank" rel="noopener" class="resume-repo-btn">
+          {{ repo_label }}
+        </a>
+      {% endif %}
+    </div>
+
+  </div>
+
+  {% if e.brief %}
+    <div class="brief">{{ e.brief }}</div>
+  {% endif %}
+
+  {% if e.skills %}
+    <div class="skills">{{ e.skills }}</div>
+  {% endif %}
+
+  {% if e.summary_content %}
+    {% assign summary_label = e.summary_title | default: "Show extended summary" %}
+    <div class="sum">
+      <details>
+        <summary>{{ summary_label }}</summary>
+        {{ e.summary_content }}
+      </details>
+    </div>
+  {% endif %}
+
+</div>

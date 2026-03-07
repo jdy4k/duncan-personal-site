@@ -1,0 +1,54 @@
+{% comment %}
+  resume.liquid — Jekyll _includes partial for generating a resume.
+
+  USAGE in any page/layout:
+    {% include resume.liquid
+      work_experience=site.data.resume.work_experience
+      projects=site.data.resume.projects
+      education=site.data.resume.education
+      service=site.data.resume.service
+      author=site.data.resume.author
+    %}
+{% endcomment %}
+
+{% assign work_experience = include.work_experience %}
+{% assign projects        = include.projects %}
+{% assign education       = include.education %}
+{% assign service         = include.service %}
+{% assign author          = include.author %}
+
+<div class="resume-content">
+
+  {% if work_experience and work_experience.size > 0 %}
+    <h2 class="resume-section-header">Work Experience</h2>
+    {% for entry in work_experience %}
+      {% include resume-entry.liquid entry=entry %}
+    {% endfor %}
+  {% endif %}
+
+  {% if projects and projects.size > 0 %}
+    <h2 class="resume-section-header">Projects</h2>
+    {% for entry in projects %}
+      {% include resume-entry.liquid entry=entry %}
+    {% endfor %}
+  {% endif %}
+
+  {% if education and education.size > 0 %}
+    <h2 class="resume-section-header">Education</h2>
+    {% for entry in education %}
+      {% include resume-entry.liquid entry=entry %}
+    {% endfor %}
+  {% endif %}
+
+  {% if service and service.size > 0 %}
+    <h2 class="resume-section-header">Service</h2>
+    {% for entry in service %}
+      {% include resume-entry.liquid entry=entry %}
+    {% endfor %}
+  {% endif %}
+
+  {% if author %}
+    <p class="resume-footer">Built with Jekyll. {{ author }}. All rights reserved.</p>
+  {% endif %}
+
+</div>
